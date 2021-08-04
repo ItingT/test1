@@ -1,0 +1,97 @@
+
+<html>
+    <head>
+        <title>111111</title>
+        <linkrel ="stylesheet" type = "text/css" href="/static/style.css"   
+    </head>
+
+    <body>
+     <center><h1>問卷知情同意書</h1></center>
+     <div id =content>
+        <font size ="5">
+          <h5>親愛的受訪者，您好：
+
+              <p>匡衡（智庫）數據科技有限公司正在進行一項國內大學聲望調查。</p>
+              <p>以下會有一百組兩兩配對的大學，請您憑直覺判斷每一組呈現給您的兩所大學，哪一所聲望較高？</p>
+              
+              <p>如果您沒有聽過其中任何一所大學，請您點選「跳過」。</p>
+              
+              <p>首先我們會請問您一些基本人口資料，以便我們確認樣本代表性，並做事後加權。</p>
+              
+              <p>接著會開始總共100題兩兩配對比較，只有認真做完所有100組比對，才會獲得填答的報酬（研究團隊是量化研究專家，會有機制檢查出不認真填答的受訪者）。</p>
+              
+              <p>整份調查完成之後，請您留下手機號碼，以便我們透過簡訊發送便利商店禮券作為報酬。</p>
+              
+              <p>透過手機簡訊接觸到您，目的是要取得全國代表性樣本，因此只有收到簡訊的手機號碼（我們會比對您的電話）能夠順利獲得禮券。</p>
+              
+              <p> 資深研究員 李瑞中博士 敬上 （Email: allen.li@nyu.edu, TEL: 0912728935）</p>
+              
+              <p>李瑞中，美國紐約大學社會學博士，臺大心理系畢業，國防部心輔官第七期結訓。
+              曾任職／教於紐約大學（阿布達比分校社會研究與公共政策副教授、全球公衛學院跨洲公衛碩士學程阿布達比校區負責人、人口中心研究員）、國立臺灣大學（兼任助理教授）、中央研究院歐美所（社會所合聘）助研究員（暨歐美公共政策與性別平權重點研究計畫召集人）、美國蘭德智庫人口中心副主任、教育部人文社會科學優秀人才跨國培育計畫主持人。</p>
+              <p>現主持大飽教授留學講堂、匡衡數據科技有限公司與繁拓研究股份有限公司，並擔任VIS國際實驗教育機構首席顧問。</p>
+          </h5>      
+        </font>      
+      </div>
+        <center><button onclick="start()" class="button" type="submit" name ="enroll">我已了解實驗規定，開始作答</button></center>
+      </body>
+        
+        <style>
+            html {
+                background-color: #EFEEEA;
+              }
+              
+              .pagetitle {
+                  color: #007C89;
+              }
+              
+              .button {
+                background-color: white;
+                border: 2px solid #40383B;
+                border-radius: 12px;
+                color: black;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 24px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+              }
+              
+              .button:hover {
+                background-color: #40383B;
+                color: #ffffff;
+              }
+              #content{
+                margin: 0 auto;
+                border:  0px solid #666;
+                width: 750px;
+                height: 850px;
+              }
+          
+        </style>
+        <script>
+              function prohibitpreviouspage(){
+
+                if(navigator.userAgent.indexOf('Firefox') != -1 && parseFloat(navigator.userAgent.substring(navigator.userAgent.indexOf('Firefox') + 8)) >= 3.6 ){
+
+                //Firefox
+                setTimeout("fn_forward()",1);
+                window.history.go(1);
+                }else{ //IE.Chrome.Edge
+                window.history.forward();
+                }
+                }
+              function fn_forward() {
+                history.forward();
+                setTimeout("fn_forward()",1);
+                }
+            function start() {
+                return window.location.assign("https://itingt.github.io/test/if_in_school")
+                }
+
+        </script>
+
+
+    
