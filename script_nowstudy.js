@@ -15,9 +15,9 @@
                 setTimeout("fn_forward()",1);
                 }
               function MS(){
-                return window.location.assign("https://itingt.github.io/test/school_info_g")
+                return window.location.assign("https://itingt.github.io/test1/school_info_g")
                 }
               function N(){
-                return window.location.assign("https://itingt.github.io/test/end_page")
+                return window.location.assign("https://itingt.github.io/test1/end_page")
                 }
 
